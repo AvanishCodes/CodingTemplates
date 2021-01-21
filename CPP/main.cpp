@@ -35,12 +35,36 @@ typedef map<int,int> MPII;                                                  // M
 typedef set<int> SETI;                                                      // set of Integers
 typedef multiset<int> MSETI;                                                // Multiset of Integers
 
+/* Inline functions */
+// Check if a number is even
+inline bool isEven(int a){
+    if(a&1)
+        return false;
+    return true;
+}
+// Check if the number is odd
+inline bool isOdd(int a){
+    if(a&1)
+        return true;
+    return false;
+}
+// Get the most significant digit of a decimal number
+inline int MSD(int N){
+    return floor(log10(N));
+}
+// Check if the number is a power of 2
+inline bool isPowerOf2(int N){
+    return N&& (!(N&(N-1))); 
+}
+/* End of Inline Functions */
+
+
 /****** Template of some basic operations *****/
 template<typename T, typename U> inline void amin(T &x, U y) { if(y < x) x = y; }
 template<typename T, typename U> inline void amax(T &x, U y) { if(x < y) x = y; }
 /**********************************************/
 
-template <typename T> inline void writeInt(T x)
+template <typename T> inline void writeInt(T x)         // Write an integer on console
 {
 	int i = 20;
 	char buf[21];
@@ -57,8 +81,7 @@ template <typename T> inline void writeInt(T x)
 	} while (buf[i++] != '\n');
 }
 
-template <typename T>
-inline T readInt()
+template <typename T> inline T readInt()                  // Read an Integer
 {
     T n = 0, s = 1;
     char p = getchar();
@@ -84,8 +107,10 @@ void testCase()
             FOR(i, 10, 100, 2)
                 cout<<i<<' ';
         Output:
-            10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 
+            10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 
+            54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 
     */
+
     return;
 }
 
@@ -103,3 +128,12 @@ int main()
         testCase();
     return 0;
 }
+
+
+/*
+    Author: Avanish Gupta
+    Email:  avanishcodes@gmail.com
+            ui19co15@iiitsurat.ac.in
+    Date: January 21st, 2021
+    Use: Personal
+*/
