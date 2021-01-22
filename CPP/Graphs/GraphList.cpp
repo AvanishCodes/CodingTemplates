@@ -80,6 +80,10 @@ void testCase()
     {
         int src, dest;
         cin>>src>>dest;
+        // cout<<"\nSize of src: "<<sizeof(src)<<'\n';
+        // cout<<"\nSize of dest: "<<sizeof(dest)<<'\n';
+        int sizeOfSrc = sizeof(src);
+        int sizeOfDest = sizeof(dest);
         G.addEdge(src, dest);
     }
     G.printGraph();
