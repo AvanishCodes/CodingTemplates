@@ -22,18 +22,18 @@ int partition(vector<int> &arr, int low, int high)
         if (arr[j] < pivot) // If the current element is lesser than the pivot element
         {
             i++;                  // There is one more element lesser than the pivot
-            swap(arr[i], arr[j]); //
+            swap(&arr[i], &arr[j]); //
             // int temp = arr[i];
             // arr[i] = arr[j];
             // arr[j] = temp;
         }
     }
-    swap(arr[i + 1], arr[high]); // The pivot should be at i+1
+    swap(&arr[i + 1], &arr[high]); // The pivot should be at i+1
     int res = i + 1;
     // int temp = arr[res];
     // arr[res] = arr[high];
     // arr[high] = temp;
-    return res; // return the index of the pivot
+    return (i+1); // return the index of the pivot
 }
 
 // Quick Sort Function
@@ -72,13 +72,13 @@ void testCase()
 
 int main()
 {
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#else
-// online submission
-#endif
-    int t;
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #else
+    // online submission
+    #endif
+    int t=1;
     cin >> t;
     while (t--)
     {
