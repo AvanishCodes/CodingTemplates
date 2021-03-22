@@ -10,11 +10,11 @@ bool doesTargetSumExist(vector<int> a, int n, int val)
     int start = 0;
     int end = n - 1;
     int thisSum = a[start] + a[end];
-    while (start< end)
+    while (start < end)
     {
-        if(thisSum == val)
+        if (thisSum == val)
             return true;
-        else if(thisSum < val)
+        else if (thisSum < val)
             start += 1;
         else
             end -= 1;
