@@ -1,1 +1,10 @@
-Graph created
+Number of edges emerging from vertex 0 --> 2
+Number of edges emerging from vertex 1 --> 2
+Number of edges emerging from vertex 2 --> 0
+Number of edges emerging from vertex 3 --> 1
+Number of edges emerging from vertex 4 --> 1
+Vertex 0 is connected to :1, 2, 
+Vertex 1 is connected to :2, 3, 
+Vertex 2 is connected to :
+Vertex 3 is connected to :4, 
+Vertex 4 is connected to :0, 
