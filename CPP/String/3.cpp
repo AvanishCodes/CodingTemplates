@@ -23,8 +23,8 @@ class LongestPalindromicSubstring
 
 public:
   LongestPalindromicSubstring(string str);
-  pair<int, int> getPalindromeEnds(int center);
-  string longestPalindrome(string s);
+  pair<int, int> getPalindromeEnds(int left, int right);
+  string longestPalindrome();
 };
 
 // Constructor
@@ -33,24 +33,45 @@ LongestPalindromicSubstring::LongestPalindromicSubstring(string str)
   this->s = str;
 }
 
-// Function to find the longest palindromic substring
-string LongestPalindromicSubstring::longestPalindrome(string s)
+// Get the ends of the longest palindrome centered at the given center
+pair<int, int> LongestPalindromicSubstring::getPalindromeEnds(int left, int right)
 {
-  int max = 1;
-  int len = s.length();
-  int i, j;
-  int start = 0, end = 0;
-  for (i = 0; i < len; i++)
-  {
-  }
-  return s.substr(start, end);
+  while (left >= 0 && right < s.size() && s[left] == s[right])
+    left--, right++;
+  return make_pair(left + 1, right - 1);
 }
 
+// Function to find the longest palindromic substring
+string LongestPalindromicSubstring::longestPalindrome()
+{
+  if (s.size() <= 1)
+    return s;
+  int max = 1;
+  int i, j;
+  int start = 0, end = 0;
+  int len = s.length();
+  pair<int, int> p1;
+  pair<int, int> p2;
+  for (i = 0; i < len; i++)
+  {
+    p1 = getPalindromeEnds(i, i);
+    p2 = getPalindromeEnds(i, i + 1);
+    int temp = p1.second - p1.first + 1;
+    if (temp > max)
+      max = temp, start = p1.first, end = p1.second;
+    temp = p2.second - p2.first + 1;
+    if (temp > max)
+      max = temp, start = p2.first, end = p2.second;
+  }
+  return s.substr(start, end - start + 1);
+}
+
+// Driver Code
 int main()
 {
   string str;
   cin >> str;
   LongestPalindromicSubstring lps(str);
-  cout << lps.longestPalindrome(str) << endl;
+  cout << lps.longestPalindrome() << endl;
   return 0;
 }
