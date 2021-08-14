@@ -6,3 +6,6 @@
 4. [Tries for searching string](4.cpp)
 5. [Sliding Window Search](5.cpp)
 6. [Rabin karp Pattern Search](6.cpp): to search a pattern in a string of low probability.
+7. [Z-Algorithm](7.cpp): Linear Time pattern searching algorithm.
+> - **Idea**: find the longest substring starting at any index in text string which is also a prefix of the pattern string.
+8. 
