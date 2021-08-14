@@ -5,3 +5,4 @@
 3. [Longest palindromic substring](3.cpp)
 4. [Tries for searching string](4.cpp)
 5. [Sliding Window Search](5.cpp)
+6. [Rabin karp Pattern Search](6.cpp): to search a pattern in a string of low probability.

@@ -8,15 +8,14 @@ VI searchPattern(string str, string pattern)
 {
   int i, j, k, m, n;
   VI res;
-  int start, end;
   // Length of the string and pattern
   n = str.length();
   m = pattern.length();
   if (m > n)
     return res;
   for (int i = 0; i <= n - m; i++)
-    if (str.substr(i, m) == pattern)
-      res.push_back(i);
+    if (str.substr(i, m) == pattern) // Check if the pattern is present in the string
+      res.push_back(i);              // If yes, store the starting index
   return res;
 }
 
