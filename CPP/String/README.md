@@ -10,3 +10,4 @@
 > - **Idea**: find the longest substring starting at any index in text string which is also a prefix of the pattern string.
 8. [Add characters in the begining to make a string palindrome](8.cpp)
 9. [KMP Algorithm for pattern searching](9.cpp)
+10. [Aho Corasick Algorithm for pattern searching algorithm](10.cpp)

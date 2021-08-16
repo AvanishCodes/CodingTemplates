@@ -1,10 +1,7 @@
-10 Build Successfull
-0 Build Successfull
-0 Build Successfull
-0 Build Successfull
-0 Build Successfull
-0 Build Successfull
-0 Build Successfull
-0 Build Successfull
-0 Build Successfull
-0 Build Successfull
+
+The element with value 100 in vector NO
+
+The index of the element with value 100 in vector is: -1
+
+The element with value 100 is not found in the vector
+56 65 57 89 35 
