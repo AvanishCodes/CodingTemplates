@@ -1,4 +1,1 @@
-Input taken
-Entry point of funtion
-35found in array: YES
-Index of 35 is 6
+0 1
