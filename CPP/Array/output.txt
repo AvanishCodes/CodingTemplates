@@ -1,7 +1,4 @@
-
-The element with value 56 in vector YES
-
-The index of the element with value 56 in vector is: 0
-
-The indices of the element with value 56 in vector are: 0 2 
-56 65 56 89 35 
+Input taken
+Entry point of funtion
+35found in array: YES
+Index of 35 is 6
