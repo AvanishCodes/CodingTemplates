@@ -2,6 +2,30 @@
 '''
 
 class MinimumStepsToOne:
+    '''MinimunStepsToOne Class
+
+    Attributes:
+        _steps (int): Minimum number of steps to reach 1
+        _number (int): Number to find the minimum steps to reach 1
+        _result_list (list): List of numbers of size steps
+
+    Methods:
+        get_steps(self, n: int) -> int:
+            Get the minimum number of steps to reach 1
+        
+    Raises:
+        Exception: If number is less than 1
+    
+    Examples:
+        >>> MinimumStepsToOne(1)._get_steps(1)
+        0
+        >>> MinimumStepsToOne(2)._get_steps(2)
+        1
+        >>> MinimumStepsToOne(3)._get_steps(3)
+        2
+        >>> MinimumStepsToOne(4)._get_steps(4)
+        2
+    '''
     _steps = float('inf')
     _number = int()
     _result_list = list()   
@@ -16,6 +40,16 @@ class MinimumStepsToOne:
 
         Raises:
             Exception: If number is less than 1
+
+        Examples:
+            >>> MinimumStepsToOne(1)._get_steps(1)
+            0
+            >>> MinimumStepsToOne(2)._get_steps(2)
+            1
+            >>> MinimumStepsToOne(3)._get_steps(3)
+            2
+            >>> MinimumStepsToOne(4)._get_steps(4)
+            2
         '''
         if number < 1:
             raise Exception('Number must be greater than 0')
