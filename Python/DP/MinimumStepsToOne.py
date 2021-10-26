@@ -101,5 +101,7 @@ class MinimumStepsToOne:
         return self._result_list[n]
 
 
+'''
 if __name__ == '__main__':
     print(MinimumStepsToOne(10).get_steps(11))
+'''
