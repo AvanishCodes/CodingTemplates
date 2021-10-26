@@ -10,3 +10,5 @@ Example:
 
 '''
 from Fibonacci import Fibonacci
+from MinimumCoins import MinimumCoins
+from MinimumStepsToOne import MinimumStepsToOne

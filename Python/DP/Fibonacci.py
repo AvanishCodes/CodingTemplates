@@ -6,6 +6,25 @@ class Fibonacci:
     Attributes:
         _capacity: capacity of the Fibonacci sequence
         _fib: the Fibonacci sequence
+
+    Methods:
+        get: get the nth Fibonacci number
+        size: get the capacity of the Fibonacci sequence
+
+    Raises:
+        TypeError: if n is not an integer
+        ValueError: if n is less than 2
+
+    Examples:
+        >>> fib = Fibonacci(10)
+        >>> fib.get(0)
+        0
+        >>> fib.get(1)
+        1
+        >>> fib.get(20)
+        -1
+        >>> fib.size()
+        10
     '''
     _capacity = 0   # Default capacity of Fibonacci sequence
     _fib = []
