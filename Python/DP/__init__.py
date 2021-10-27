@@ -9,7 +9,8 @@ Example:
     55
 
 '''
-from Fibonacci import Fibonacci
-from MinimumCoins import MinimumCoins
-from MinimumStepsToOne import MinimumStepsToOne
-from WinesProblem import WinesProblem
+from .Fibonacci import Fibonacci
+from .MinimumCoins import MinimumCoins
+from .MinimumStepsToOne import MinimumStepsToOne
+from .WinesProblem import WinesProblem
+from .CatalanNumbers import CatalanNumbers
